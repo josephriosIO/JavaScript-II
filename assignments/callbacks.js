@@ -31,9 +31,7 @@ function getLength(arr, cb) {
   return cb(length);
 }
 
-getLength(items, function(length) {
-  console.log(length);
-});
+getLength(items, length => console.log(length));
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
@@ -42,9 +40,7 @@ function last(arr, cb) {
   return cb(lastEl);
 }
 
-last(items, function(last) {
-  console.log(last);
-});
+last(items, last => console.log(last));
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
@@ -53,9 +49,7 @@ function sumNums(x, y, cb) {
   return cb(sum);
 }
 
-sumNums(1, 5, function(sum) {
-  console.log(sum);
-});
+sumNums(1, 5, sum => console.log(sum));
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
@@ -64,9 +58,7 @@ function multiplyNums(x, y, cb) {
   return cb(mutiply);
 }
 
-multiplyNums(5, 5, function(total) {
-  console.log(total);
-});
+multiplyNums(5, 5, total => console.log(total));
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
@@ -78,9 +70,7 @@ function contains(item, list, cb) {
   return cb(false);
 }
 
-contains("Gum", items, function(value) {
-  console.log(value);
-});
+contains("Gum", items, value => console.log(value));
 
 /* STRETCH PROBLEM */
 const names = ["joseph", "joseph", "matt", "steven"];
@@ -100,6 +90,4 @@ function removeDuplicates(array, cb) {
   return cb(arr);
 }
 
-removeDuplicates(names, function(arr) {
-  console.log(arr);
-});
+removeDuplicates(names, arr => console.log(arr));
