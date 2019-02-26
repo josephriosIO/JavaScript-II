@@ -1,9 +1,18 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function city() {
+  const newLaw = "Everyone must eat chalk";
+  console.log("haha new law");
+  function cityBlock() {
+    return "this law here stinks!: " + newLaw;
+  }
 
+  console.log(cityBlock());
+}
+
+console.log(city());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
